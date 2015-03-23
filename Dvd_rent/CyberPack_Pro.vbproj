@@ -1,0 +1,1980 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63298AA1-A27F-458B-8608-30EC21418533}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CyberPack_Pro.My.MyApplication</StartupObject>
+    <RootNamespace>CyberPack_Pro</RootNamespace>
+    <AssemblyName>CyberPack Pro</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <OptionExplicit>Off</OptionExplicit>
+    <ApplicationIcon>MainIcon.ico</ApplicationIcon>
+    <OptionCompare>Binary</OptionCompare>
+    <SignManifests>true</SignManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>FAB5E68C1F8DFB57648BB9F74A8AFC38D96E0CDA</ManifestCertificateThumbprint>
+    <ManifestKeyFile>CyberPack_Pro_TemporaryKey.pfx</ManifestKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <OptionStrict>Off</OptionStrict>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>DatabaseManagement_DVDRent</ProductName>
+    <PublisherName>AukOrganization</PublisherName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42025,42026,42029,42030,42031,42032,42036,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <WarningLevel>1</WarningLevel>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>41998,41999,42004,42016,42017,42018,42019,42020,42021,42022,42025,42026,42029,42030,42031,42032,42036,42104,42105,42106,42107,42108,42109,42353,42354,42355</NoWarn>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <WarningLevel>1</WarningLevel>
+    <RemoveIntegerChecks>true</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CyberPack_Pro.AukDatabaseDataSetTableAdapters" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Globalization" />
+    <Import Include="System.Resources" />
+    <Import Include="System.Runtime" />
+    <Import Include="System.Windows" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AukClass\ADSRC2.vb" />
+    <Compile Include="AukClass\AukCallesNew\AukFunCtions3.vb" />
+    <Compile Include="AukClass\AukCallesNew\CSOFT.vb" />
+    <Compile Include="AukClass\AukCallesNew\SoftIn6.vb" />
+    <Compile Include="AukClass\AukMod2.vb" />
+    <Compile Include="AukClass\AukSql6_2.vb" />
+    <Compile Include="AukClass\DVDRENT.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AukClass\SerialGens3_dt.vb" />
+    <Compile Include="AukDatabaseDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AukDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CyberBusiness\CyberBusi_23-Dec-2007\Cyber4.Designer.vb">
+      <DependentUpon>Cyber4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CyberBusiness\CyberBusi_23-Dec-2007\Cyber4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CyberBusiness\CyberMem.Designer.vb">
+      <DependentUpon>CyberMem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CyberBusiness\CyberMem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CyberBusiness\Cyber_PcID.Designer.vb">
+      <DependentUpon>Cyber_PcID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CyberBusiness\Cyber_PcID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CyberPack Pro Class\netRegCheck.vb" />
+    <Compile Include="Forms\Movie Rent New 2008\26-jAN-08\DVDDeletedRows.Designer.vb">
+      <DependentUpon>DVDDeletedRows.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Movie Rent New 2008\26-jAN-08\DVDDeletedRows.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movie Rent New 2008\26-jAN-08\DVDRENT_ADMIN.Designer.vb">
+      <DependentUpon>DVDRENT_ADMIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Movie Rent New 2008\26-jAN-08\DVDRENT_ADMIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movie Rent New 2008\26-jAN-08\DVDRENT_SELL8.designer.vb">
+      <DependentUpon>DVDRENT_SELL8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Movie Rent New 2008\26-jAN-08\DVDRENT_SELL8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movie Rent New 2008\DVDIDS.Designer.vb">
+      <DependentUpon>DVDIDS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Movie Rent New 2008\DVDIDS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\MOVIES_BENEFIT_REPORT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOVIES_BENEFIT_REPORT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\MOVIES_VIEWS_dt.Designer.vb">
+      <DependentUpon>MOVIES_VIEWS_dt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\MOVIES_VIEWS_dt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\MSold_4.Designer.vb">
+      <DependentUpon>MSold_4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\MSold_4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\MSOLD_MEMO_RP.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MSOLD_MEMO_RP.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\MVIEWS.Designer.vb">
+      <DependentUpon>MVIEWS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\MVIEWS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\ps_employees.Designer.vb">
+      <DependentUpon>ps_employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\ps_employees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MOVIES SOLD\SoldReport.vb">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoldReport.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginInformation.Designer.vb">
+      <DependentUpon>LoginInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoinSoft.Designer.vb">
+      <DependentUpon>LoinSoft.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoinSoft.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\DynamicNetCost.Designer.vb">
+      <DependentUpon>DynamicNetCost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\DynamicNetCost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\mRentDays.Designer.vb">
+      <DependentUpon>mRentDays.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\mRentDays.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\war_info.Designer.vb">
+      <DependentUpon>war_info.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\war_info.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationSystem\AboutBox1.designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationSystem\AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationSystem\NetConnection.Designer.vb">
+      <DependentUpon>NetConnection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationSystem\NetConnection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationSystem\TrailInsInfo.Designer.vb">
+      <DependentUpon>TrailInsInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationSystem\TrailInsInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CafeMonitoring2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CafeMonitoring2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Resource1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\22-jan-08\NewTrans8.Designer.vb">
+      <DependentUpon>NewTrans8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\22-jan-08\NewTrans8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\MainReport\MobileReport2.vb">
+      <DependentUpon>MobileReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="TeleCom Company\MainReport\MobileReportCardsOnly2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MobileReportCardsOnly2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\MCompany3.Designer.vb">
+      <DependentUpon>MCompany3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\MCompany3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\Querys\MOBILE_SUMMARY.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOBILE_SUMMARY.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\Querys\Summary_Query_Mob.Designer.vb">
+      <DependentUpon>Summary_Query_Mob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\Querys\Summary_Query_Mob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\AukQuery.Designer.vb">
+      <DependentUpon>AukQuery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\AukQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CyberBusiness\FeesPaid.Designer.vb">
+      <DependentUpon>FeesPaid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CyberBusiness\FeesPaid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CyberBusiness\Ip_Settings.Designer.vb">
+      <DependentUpon>Ip_Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CyberBusiness\Ip_Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CyberBusiness\Pakages.Designer.vb">
+      <DependentUpon>Pakages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CyberBusiness\Pakages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\Buyx.Designer.vb">
+      <DependentUpon>Buyx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Buyx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\MSOLD_SET.Designer.vb">
+      <DependentUpon>MSOLD_SET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\MSOLD_SET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\Option_Gen5.Designer.vb">
+      <DependentUpon>Option_Gen5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Option_Gen5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_SOLD3_dt.Designer.vb">
+      <DependentUpon>PS_SOLD3_dt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_SOLD3_dt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\Vendors\Vendors.Designer.vb">
+      <DependentUpon>Vendors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\Vendors\Vendors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\Vendors\VENDORS_SUMMARY.Designer.vb">
+      <DependentUpon>VENDORS_SUMMARY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\Vendors\VENDORS_SUMMARY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\DVD_rent_Report3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DVD_rent_Report3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\SimInformation\Options_Sim.Designer.vb">
+      <DependentUpon>Options_Sim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\SimInformation\Options_Sim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\SimInformation\SimCate.Designer.vb">
+      <DependentUpon>SimCate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\SimInformation\SimCate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\SimInformation\SimCommon.Designer.vb">
+      <DependentUpon>SimCommon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\SimInformation\SimCommon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\SimInformation\SimSold.Designer.vb">
+      <DependentUpon>SimSold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\SimInformation\SimSold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\SimInformation\SimStock.Designer.vb">
+      <DependentUpon>SimStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\SimInformation\SimStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\StockI_mob.Designer.vb">
+      <DependentUpon>StockI_mob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\StockI_mob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserCreator.Designer.vb">
+      <DependentUpon>UserCreator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserCreator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PS_VIEW.designer.vb">
+      <DependentUpon>PS_VIEW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\PS_VIEW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ViewQuery.Designer.vb">
+      <DependentUpon>ViewQuery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewQuery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flash Objects\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flash Objects\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flash Objects\Auk_Information.Designer.vb">
+      <DependentUpon>Auk_Information.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Flash Objects\Auk_Information.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CostomerCheck.Designer.vb">
+      <DependentUpon>CostomerCheck.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CostomerCheck.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Costomers.Designer.vb">
+      <DependentUpon>Costomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Costomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DVDView.Designer.vb">
+      <DependentUpon>DVDView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DVDView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Flash Objects\Lorenzo.designer.vb">
+      <DependentUpon>Lorenzo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Flash Objects\Lorenzo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movie_Type.Designer.vb">
+      <DependentUpon>Movie_Type.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Movie_Type.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForms\LOAD2.Designer.vb">
+      <DependentUpon>LOAD2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewForms\LOAD2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForms\TRaLoad.Designer.vb">
+      <DependentUpon>TRaLoad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewForms\TRaLoad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\AdCyber.Designer.vb">
+      <DependentUpon>AdCyber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\AdCyber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PrSrc.Designer.vb">
+      <DependentUpon>PrSrc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PrSrc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelfEntry.Designer.vb">
+      <DependentUpon>SelfEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SelfEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsAccess.Designer.vb">
+      <DependentUpon>SettingsAccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SettingsAccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Limg.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Limg.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\Clients.Designer.vb">
+      <DependentUpon>Clients.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\Clients.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="AukClass\StrEntrys.vb" />
+    <Compile Include="NewForms\Advance_SelectedEntry.Designer.vb">
+      <DependentUpon>Advance_SelectedEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewForms\Advance_SelectedEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\BackUp.Designer.vb">
+      <DependentUpon>BackUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\BackUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\DL_Opt.Designer.vb">
+      <DependentUpon>DL_Opt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\DL_Opt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\DVDOPT.Designer.vb">
+      <DependentUpon>DVDOPT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\DVDOPT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\DVD_MEMBER.Designer.vb">
+      <DependentUpon>DVD_MEMBER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\DVD_MEMBER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeleCom Company\MSETTING.Designer.vb">
+      <DependentUpon>MSETTING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeleCom Company\MSETTING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\CHK_PASS.Designer.vb">
+      <DependentUpon>CHK_PASS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\CHK_PASS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\RENTAL_SET.Designer.vb">
+      <DependentUpon>RENTAL_SET.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\RENTAL_SET.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\FIND_BETWEEN.Designer.vb">
+      <DependentUpon>FIND_BETWEEN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Options\FIND_BETWEEN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PCATE.Designer.vb">
+      <DependentUpon>PCATE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PCATE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PRO_ADD2.Designer.vb">
+      <DependentUpon>PRO_ADD2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PRO_ADD2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_BENEFIT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PS_BENEFIT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_CATE_F.Designer.vb">
+      <DependentUpon>PS_CATE_F.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_CATE_F.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_CLIENT.Designer.vb">
+      <DependentUpon>PS_CLIENT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_CLIENT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_COL_REPORT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PS_COL_REPORT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_MEMO_RP24_SDiscount.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PS_MEMO_RP24_SDiscount.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_SETTING.Designer.vb">
+      <DependentUpon>PS_SETTING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_SETTING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_WARRANTY.Designer.vb">
+      <DependentUpon>PS_WARRANTY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PRODUCT SOLD\PS_WARRANTY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationSystem\Register_2.designer.vb">
+      <DependentUpon>Register_2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationSystem\Register_2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CostoemrReport.vb">
+      <DependentUpon>CostoemrReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\CyberCafeMembers_PersonalReport.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberCafeMembers_PersonalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\CyberCafe_Members_Report.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberCafe_Members_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\CYBER_MEMBERS_FEES_DueReport.vb">
+      <DependentUpon>CYBER_MEMBERS_FEES_DueReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DVDPROFIT_REPOT.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DVDPROFIT_REPOT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\DVDS_REport.vb">
+      <DependentUpon>DVDS_REport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\DVDVIEW_REPORT_1.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DVDVIEW_REPORT_1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\DVD_MEMBER_IDCARD.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DVD_MEMBER_IDCARD.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\IPADDRESS.vb">
+      <DependentUpon>IPADDRESS.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Report\Subs_Report.vb">
+      <DependentUpon>Subs_Report.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="Small_imgs.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Small_imgs.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewInfo2.Designer.vb">
+      <DependentUpon>ViewInfo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewInfo2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VsImg.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VsImg.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Warn.Designer.vb">
+      <DependentUpon>Warn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Warn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CyberBusiness\CyberBusi_23-Dec-2007\Cyber4.resx">
+      <DependentUpon>Cyber4.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CyberBusiness\CyberMem.resx">
+      <DependentUpon>CyberMem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CyberBusiness\Cyber_PcID.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Cyber_PcID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movie Rent New 2008\26-jAN-08\DVDDeletedRows.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DVDDeletedRows.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movie Rent New 2008\26-jAN-08\DVDRENT_ADMIN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DVDRENT_ADMIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movie Rent New 2008\26-jAN-08\DVDRENT_SELL8.resx">
+      <DependentUpon>DVDRENT_SELL8.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movie Rent New 2008\DVDIDS.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DVDIDS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MOVIES SOLD\MOVIES_BENEFIT_REPORT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MOVIES_BENEFIT_REPORT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MOVIES SOLD\MOVIES_VIEWS_dt.resx">
+      <DependentUpon>MOVIES_VIEWS_dt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MOVIES SOLD\MSold_4.resx">
+      <DependentUpon>MSold_4.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MOVIES SOLD\MSOLD_MEMO_RP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MSOLD_MEMO_RP.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MOVIES SOLD\MVIEWS.resx">
+      <DependentUpon>MVIEWS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MOVIES SOLD\ps_employees.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ps_employees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MOVIES SOLD\SoldReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SoldReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginInformation.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoinSoft.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoinSoft.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\DynamicNetCost.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DynamicNetCost.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\mRentDays.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>mRentDays.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\war_info.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>war_info.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationSystem\AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationSystem\NetConnection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NetConnection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationSystem\TrailInsInfo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TrailInsInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CafeMonitoring2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CafeMonitoring2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\22-jan-08\NewTrans8.resx">
+      <DependentUpon>NewTrans8.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\MainReport\MobileReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MobileReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\MainReport\MobileReportCardsOnly2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MobileReportCardsOnly2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\MCompany3.resx">
+      <DependentUpon>MCompany3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\Querys\MOBILE_SUMMARY.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>MOBILE_SUMMARY.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\Querys\Summary_Query_Mob.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Summary_Query_Mob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\AukQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AukQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CyberBusiness\FeesPaid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FeesPaid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CyberBusiness\Ip_Settings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Ip_Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CyberBusiness\Pakages.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Pakages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Buyx.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Buyx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\MSOLD_SET.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MSOLD_SET.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Option_Gen5.resx">
+      <DependentUpon>Option_Gen5.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\PS_SOLD3_dt.resx">
+      <DependentUpon>PS_SOLD3_dt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\Vendors\Vendors.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Vendors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\Vendors\VENDORS_SUMMARY.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VENDORS_SUMMARY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\DVD_rent_Report3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DVD_rent_Report3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\SimInformation\Options_Sim.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Options_Sim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\SimInformation\SimCate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimCate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\SimInformation\SimCommon.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimCommon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\SimInformation\SimSold.resx">
+      <DependentUpon>SimSold.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\SimInformation\SimStock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SimStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\StockI_mob.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StockI_mob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserCreator.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserCreator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PS_VIEW.resx">
+      <DependentUpon>PS_VIEW.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ViewQuery.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewQuery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flash Objects\Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flash Objects\Auk_Information.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Auk_Information.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CostomerCheck.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CostomerCheck.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Costomers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Costomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DVDView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DVDView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Flash Objects\Lorenzo.resx">
+      <DependentUpon>Lorenzo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movie_Type.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Movie_Type.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForms\LOAD2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LOAD2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForms\TRaLoad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TRaLoad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\AdCyber.resx">
+      <DependentUpon>AdCyber.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PrSrc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PrSrc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Reports.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelfEntry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelfEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SettingsAccess.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SettingsAccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Limg.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Limg.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\Clients.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Clients.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForms\Advance_SelectedEntry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Advance_SelectedEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\BackUp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BackUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\DL_Opt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DL_Opt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\DVDOPT.resx">
+      <DependentUpon>DVDOPT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\DVD_MEMBER.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DVD_MEMBER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeleCom Company\MSETTING.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MSETTING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\CHK_PASS.resx">
+      <DependentUpon>CHK_PASS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\RENTAL_SET.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RENTAL_SET.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\FIND_BETWEEN.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FIND_BETWEEN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\PCATE.resx">
+      <DependentUpon>PCATE.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\PRO_ADD2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PRO_ADD2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\PS_BENEFIT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PS_BENEFIT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\PS_CATE_F.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PS_CATE_F.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\PS_CLIENT.resx">
+      <DependentUpon>PS_CLIENT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\PS_COL_REPORT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PS_COL_REPORT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\PS_MEMO_RP24_SDiscount.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PS_MEMO_RP24_SDiscount.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\PS_SETTING.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PS_SETTING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRODUCT SOLD\PS_WARRANTY.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PS_WARRANTY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrationSystem\Register_2.resx">
+      <DependentUpon>Register_2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CostoemrReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CostoemrReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CyberCafeMembers_PersonalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CyberCafeMembers_PersonalReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CyberCafe_Members_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CyberCafe_Members_Report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CYBER_MEMBERS_FEES_DueReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CYBER_MEMBERS_FEES_DueReport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\DVDPROFIT_REPOT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DVDPROFIT_REPOT.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\DVDS_REport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DVDS_REport.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\DVDVIEW_REPORT_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DVDVIEW_REPORT_1.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\DVD_MEMBER_IDCARD.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>DVD_MEMBER_IDCARD.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\IPADDRESS.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>IPADDRESS.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Subs_Report.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Subs_Report.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Small_imgs.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Small_imgs.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ViewInfo2.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ViewInfo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VsImg.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>VsImg.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Warn.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CyberPack_Pro_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActualSizeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddTableHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddToFavoritesHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsBottomHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsCenteredHorizontalHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsCenteredVerticalHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsLeftHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsRightHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignObjectsTopHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignTableCellMiddleCenterHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignTableCellMiddleLeftJustHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignTableCellMiddleRightHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlignToGridHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrangeSideBySideHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrangeWindowsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttachmentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AudioHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundSoundHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BarCodeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BehindTextHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boldhs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_addressHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book_angleHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book_openHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book_reportHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book_StackOfReportsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BreakpointHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BringForwardHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BringToFrontHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalculatorHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calendar_scheduleHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CanvasScaleHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CascadeWindowsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CenterAcrossHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckBoxHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckGrammarHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CheckSpellingHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color_font.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Color_fontHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColorHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CommentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compareversionsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ConflictHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyFolderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CutHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataContainer_MoveFirsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataContainer_MoveFirstHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataContainer_MoveLastHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataContainer_MoveNextHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataContainer_MovePreviousHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DataContainer_NewRecordHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteFolderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DialHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DisplayInColorHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoubleLeftArrowHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoubleRightArrowHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_RedoHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_UndoHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditBrightContrastHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditCodeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditInformationHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditTableHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EnvelopeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eps_closedHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eps_open_largelHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eps_openHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExpandSpaceHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExpirationHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FaxHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FillDownHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FillLeftHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FillRightHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FillUpHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Filter2HS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FindNextHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag_blueHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag_greenHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flag_redHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlipHorizontalHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FlipVerticalHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontDialogHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontSchemeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormRunHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FormulaEvaluatorHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullScreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullScreenHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FunctionHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoLtrHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoRtlHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoToNextHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoToParentFolderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoToPrevious.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoToPreviousMessage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GotoShortcutsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphhs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HighlightHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HtmlBalanceBracesHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTMLPageHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTMLPasswordHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HTMLSubmitHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ImportXMLHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IndentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertHyperlinkHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertPictureHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertTabControlHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ItalicHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LegendHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LineColorHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List_BulletsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List_NumberedHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List_NumberedRTLHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List_NumberedTBHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List_NumberedVertTHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonthlyViewHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoveFolderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoveToFolderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MultiplePagesHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavForward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewCardHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewDocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewFolderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewMessageHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewReportHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NextPageHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NoteHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openfolderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenSelectedItemHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OptionsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrganizerHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrgChartHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OutdentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pageNumberHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageUpHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PageWidthHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PasteHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PauseHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PauseRecorderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PieChart3DHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PieChartHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PointerHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PortraitHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PortraitLandscapeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PreviousPageHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrimaryKeyHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintPreviewHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrintSetupHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PropertiesHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProtectFormHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProtectSubdocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PublishPlanHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PublishToWebHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PushpinHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadialChartHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecolorPictureHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecordHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RefreshDocViewHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RelationshipsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RenameFolderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RepeatHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ResizeHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RestartHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RighsRestrictedHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightArrow2HS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightArrowHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightsRestrictedHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RightToLeftDoucmentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoutingSlipHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RulerHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAllHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveAsWebPageHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaveFormDesignHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchFolderHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchWebHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendBackwardHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendToBackHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowAllCommentsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowGridlines2HS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowGridlinesHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowRulelinesHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShowRulerHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SortHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SortUpHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpeechMicHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplitSubdocumentHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StopHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SychronizeListHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SymbolHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TaskHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TextboxHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThumbnailLoadingHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThumbnailView.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThumbnailViewHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TileWindowsHorizontallyHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewThumbnailsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarningHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WebInsertHyperlinkHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WindowsHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XMLFileHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crystal1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bluesky2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bluesky12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bluesky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Media Player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\windows-media-player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\#1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\#2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\#3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\#4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackGroundImage%28Blue%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DVD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\UpIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\#.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IcoAukSoft copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="Resources\smallsuccess.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="2011 Images\ProtectionImage_2.png" />
+    <None Include="2011 Images\ProtectionImage_2.jpg" />
+    <Content Include="CyberPackPro.ico" />
+    <Content Include="MainIcon.ico" />
+    <None Include="AukDatabaseDataSet.xsc">
+      <DependentUpon>AukDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AukDatabaseDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AukDatabaseDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="AukDatabaseDataSet.xss">
+      <DependentUpon>AukDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\DeleteHS2.png" />
+    <None Include="Resources\BlackEverSlPNG.png" />
+    <None Include="Resources\BlackEverSl.jpg" />
+    <None Include="Resources\BlackEverSl2PNG.png" />
+    <None Include="Resources\BlackEverSl2.jpg" />
+    <None Include="Resources\BlackEverPNG.png" />
+    <None Include="Resources\BlackEver.png" />
+    <None Include="Resources\BlackEver.jpg" />
+    <None Include="Resources\AukRight.png" />
+    <None Include="Resources\AukRight3.png" />
+    <None Include="Resources\AukRight2.png" />
+    <None Include="Resources\AukWrong.png" />
+    <None Include="Resources\Backgroud.png" />
+    <None Include="Resources\B3.png" />
+    <None Include="Resources\TITLE2.png" />
+    <None Include="Resources\B2.png" />
+    <None Include="Resources\TITLE.png" />
+    <None Include="Resources\DVDREnt.jpg" />
+    <None Include="Resources\smallfail.gif" />
+    <None Include="Resources\l2 copy.jpg" />
+    <None Include="Resources\l1 copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports for .NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Data.Access.Components.2.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Data Access Components 2.8</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

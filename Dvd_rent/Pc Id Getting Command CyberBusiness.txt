@@ -1,0 +1,23 @@
+
+            Dim Beint As Integer = DRow - 1
+            If Beint > -1 Then
+                SBE = AukF.GridT(sender, 1, Beint)
+            Else
+                If Me.AukDatabaseDataSet.Cyber_PCID.Rows.Count > 0 Then
+                    If DRow > -1 Then sender(1, DRow).Value = Me.AukDatabaseDataSet.Cyber_PCID(0).PC_ID
+                End If
+            End If
+            If SBE IsNot Nothing Or SBE <> "" Then
+                If ADSRC.FIND_FROM_DATATABLE_INDEX(Me.AukDatabaseDataSet.Cyber_PCID, SBE) = True Then
+                    Beint = ComRow + 1
+                    If Beint >= (Me.AukDatabaseDataSet.Cyber_PCID.Rows.Count - 1) Then
+                        If DRow > -1 Then sender(1, DRow).Value = Me.AukDatabaseDataSet.Cyber_PCID(0).PC_ID
+                    Else
+                        If DRow > -1 Then sender(1, DRow).Value = Me.AukDatabaseDataSet.Cyber_PCID(Beint).PC_ID
+                    End If
+                Else
+                    If Me.AukDatabaseDataSet.Cyber_PCID.Rows.Count > 0 Then
+                        If DRow > -1 Then sender(1, DRow).Value = Me.AukDatabaseDataSet.Cyber_PCID(0).PC_ID
+                    End If
+                End If
+            End If
