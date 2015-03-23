@@ -1,0 +1,88 @@
+[Root]
+Most Recent Package=AukOrganization CheckSoft
+
+
+[Package|AukOrganization CheckSoft|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=G:\Vcd Rent\Lorenzo2\Dvd_rent\bin\Debug\SystemFor Auk\Package
+
+[Package|AukOrganization CheckSoft|Configure DAO ISAMs]
+Applicable=No
+
+[Package|AukOrganization CheckSoft|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|AukOrganization CheckSoft|Files Found]
+
+[Package|AukOrganization CheckSoft|Files Released]
+
+[Package|AukOrganization CheckSoft|Missing Dependency Information]
+
+[Package|AukOrganization CheckSoft|Out-of-Date Dependency Information]
+
+[Package|AukOrganization CheckSoft|Files Added]
+
+[Package|AukOrganization CheckSoft|Files Removed]
+
+[Package|AukOrganization CheckSoft|Files In Project]
+G:\Vcd Rent\Lorenzo2\Dvd_rent\bin\Debug\CheckSoft.exe=Yes
+J:\WINDOWS\system32\msvbvm60.dll=Yes
+J:\WINDOWS\system32\oleaut32.dll=Yes
+J:\WINDOWS\system32\olepro32.dll=Yes
+J:\WINDOWS\system32\asycfilt.dll=Yes
+J:\WINDOWS\system32\stdole2.tlb=Yes
+J:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+J:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+J:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+J:\WINDOWS\system32\VB6STKIT.DLL=Yes
+J:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|AukOrganization CheckSoft|Configure Registry Files]
+Applicable=No
+
+[Package|AukOrganization CheckSoft|Configure Remote Servers]
+Applicable=No
+
+[Package|AukOrganization CheckSoft|Install Locations]
+G:\Vcd Rent\Lorenzo2\Dvd_rent\bin\Debug\CheckSoft.exe=$(AppPath)
+J:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+J:\WINDOWS\system32\oleaut32.dll=$(WinSysPathSysFile)
+J:\WINDOWS\system32\olepro32.dll=$(WinSysPathSysFile)
+J:\WINDOWS\system32\asycfilt.dll=$(WinSysPathSysFile)
+J:\WINDOWS\system32\stdole2.tlb=$(WinSysPathSysFile)
+J:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+J:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+J:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+J:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+J:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|AukOrganization CheckSoft|Configure Shared Files]
+Applicable=Yes
+G:\Vcd Rent\Lorenzo2\Dvd_rent\bin\Debug\CheckSoft.exe=Yes
+
+[Package|AukOrganization CheckSoft|Distribution]
+Type=single
+Size=
+Title=AukSoftware_CheckRun
+
+[Package|AukOrganization CheckSoft|IconGroups]
+Group0=AukSoftware_CheckRun
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|AukOrganization CheckSoft|AukSoftware_CheckRun]
+Icon1=CheckSoft.exe
+Title1=AukSoftware_CheckRun
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|AukOrganization CheckSoft|Package]
+PackageFolder=G:\Vcd Rent\Lorenzo2\Dvd_rent\bin\Debug\SystemFor Auk\Package
+ProjectFolder=G:\Vcd Rent\Lorenzo2\Dvd_rent\bin\Debug\SystemFor Auk
+ServerSideCab=
+File1=G:\Vcd Rent\Lorenzo2\Dvd_rent\bin\Debug\SystemFor Auk\Package\setup.exe
+File2=G:\Vcd Rent\Lorenzo2\Dvd_rent\bin\Debug\SystemFor Auk\Package\Setup.Lst
+File3=G:\Vcd Rent\Lorenzo2\Dvd_rent\bin\Debug\SystemFor Auk\Package\CheckSoft.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
