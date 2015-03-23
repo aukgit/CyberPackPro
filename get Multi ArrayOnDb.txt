@@ -1,0 +1,44 @@
+  Public Function GetMultiSplit_Arrays(ByVal TextCommand As String, ByVal SplitKeys As String, Optional ByVal MainKey As String = "/", Optional ByVal RowKey As String = ",") As DataTable
+        'we spliting by a format
+        'such as due=t.lable,func=g.max,lunch=f.kkkk
+        'so there we have a format of text we can eveulate this
+        'first we have to find whole in rows array then cut them from there
+        Dim Table As New DataTable("NewOne_Arrays")
+
+        Dim MA() As Array 'for handle 'a()" array controls
+        Dim Keys As Array = Split(SplitKeys, MainKey) 'such as split ',/=/.'
+        Dim Chrs1 As String = Replace(SplitKeys, MainKey, "") 'for the chr array first get chrs with out mainkey=/, then divide them into chr array
+        Dim Chrx() As Char = Chrs1.ToCharArray 'geting them into chr array'columns
+        MA.Resize(MA, Keys.Length + 1) ' resize the arrays into keys maximam number
+        Dim DataColumnx(Chrx.Length + 1) As DataColumn 'get columns from chrx() array
+        Dim RowAr() As String = Split(TextCommand, RowKey) 'we collecting rows
+        For K As Integer = 0 To RowAr.GetUpperBound(0) 'eveulate on rows
+            Dim E1 As String
+            Dim newAr As Array
+            E1 = ArV(RowAr, K)
+            If E1 <> "" AndAlso InStr(E1, ArV(Keys, 0)) > 0 Then
+                newAr = E1.Split(Chrx)
+                If MA(K) Is Nothing Then
+                    MA(K) = RowAr 'there objects must be like the seris of [main row=RowAr]
+                End If
+                'A.SetValue(ArV(newAr, k1), k1) 'insert value on str array by index
+                MA(K) = newAr
+            End If
+        Next
+
+        For K2 As Integer = 0 To ArC(ArV(MA, 0)) - 1
+            If DataColumnx(K2) Is Nothing OrElse DataColumnx(K2).ColumnName = "" Then
+                DataColumnx(K2) = New DataColumn
+                DataColumnx(K2).DataType = Type.GetType("System.String", False, True)
+                DataColumnx(K2).ColumnName = "Auk" & K2
+                'DataColumnx(K2).AllowDBNull = True
+                Table.Columns.Add(DataColumnx(K2))
+            End If
+        Next
+        Table.PrimaryKey = DataColumnx
+        For Rint As Integer = 0 To MA.GetUpperBound(0) 'now rows on table
+            Dim A() As Object = MA(Rint)
+            Table.Rows.Add(A)
+        Next
+        Return Table
+    End Function

@@ -1,0 +1,2 @@
+K:\Vcd Rent\CyberPack Pro Source\Lorenzo2\Dvd_rent\bin\Debug\AukCyberPack_Pro.exe.config
+K:\Vcd Rent\CyberPack Pro Source\Lorenzo2\Dvd_rent\obj\Debug\AukCyberPack_Pro.pdb

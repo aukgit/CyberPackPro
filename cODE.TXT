@@ -1,0 +1,79 @@
+        Dim Wr, Pr As String
+        Dim PRate As Double = Val(My.Settings.Cyber_per_hourRate.ToString)
+        Dim MnCos As Double = Val(My.Settings.CyberMinCost.ToString)
+
+        'On Error Resume Next
+
+        If e.Modifiers = Keys.Control Then
+
+            If e.KeyCode = Keys.G Then
+                'MsgBox(DateAndTime.Now.TimeOfDay.ToString)
+                Try
+                    If Me.Cyber_BusinessDataGridView.CurrentCell.ColumnIndex = 3 Or Me.Cyber_BusinessDataGridView.CurrentCell.ColumnIndex = 4 Then
+                        Me.Cyber_BusinessDataGridView(Me.Cyber_BusinessDataGridView.CurrentCell.ColumnIndex, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).Value = CStr(TimeOfDay)
+                    End If
+
+                    If Me.Cyber_BusinessDataGridView.CurrentCell.ColumnIndex = 4 Or Me.Cyber_BusinessDataGridView.CurrentCell.ColumnIndex = 5 Or Me.Cyber_BusinessDataGridView.CurrentCell.ColumnIndex = 7 Then
+                        Me.Cyber_BusinessDataGridView(4, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).Value = CStr(TimeOfDay)
+                        Me.Cyber_BusinessDataGridView(5, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).Value = Format(Val(DateAndTime.DateDiff(DateInterval.Second, CDate(AukF.GridT(Me.Cyber_BusinessDataGridView, 3)), CDate(AukF.GridT(Me.Cyber_BusinessDataGridView, 4))) / 60), "0.##")
+                        Grate = (Val(AukF.GridT(Me.Cyber_BusinessDataGridView, 5)))
+                        If Val(MnCos) > 0 Then
+                            If Val(Format(PRate / 60 * grate, "0.##")) <= MnCos Then
+                                Me.Cyber_BusinessDataGridView(7, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).Value = MnCos
+
+                            Else
+                                Me.Cyber_BusinessDataGridView(7, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).Value = AukF.RemovePoints(Format(PRate / 60 * grate, "0.##"))
+                            End If
+                        Else
+                            Me.Cyber_BusinessDataGridView(7, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).Value = AukF.RemovePoints(Format(PRate / 60 * grate, "0.##"))
+
+                        End If
+                    End If
+                Catch ex As Exception
+                Finally
+                End Try
+                '---------------
+
+
+                py = Val(sender(7, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).value.ToString)
+                sc = Val(sender(8, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).value.ToString) * ScanP
+                Pr = (sender(9, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).value.ToString)
+                Wr = (sender(10, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).value.ToString)
+                Try
+                    dvdpr = Val(Wr.Split(",").GetValue(1).ToString) * Val(WriteDVD)
+                Catch ex As Exception
+                    dvdpr = 0
+                End Try
+                Try
+                    cdpr = Val(Wr.Split(",").GetValue(0).ToString) * Val(WriteCD)
+                Catch ex As Exception
+                    cdpr = 0
+                End Try
+
+                Try
+                    prb = Val(Pr.Split(",").GetValue(0).ToString) * Val(PrintB)
+                Catch ex As Exception
+                    prb = 0
+                End Try
+                Try
+                    prc = Val(Pr.Split(",").GetValue(1).ToString) * Val(PrintC)
+                Catch ex As Exception
+                    prc = 0
+                End Try
+                'MsgBox(Val(Pr.Split(",").GetValue(0).ToString) & "Result : " & sc, , sc)
+
+                'Try
+                '    prc = Val(Wr.Split(",").GetValue(1).ToString) * Val(PrintC)
+                'Catch ex As Exception
+                '    prc = 0
+                'End Try
+                total = Val(dvdpr) + Val(cdpr) + Val(prb) + Val(prc) + Val(py) + Val(sc)
+                'MsgBox(total)
+                sender(11, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).value = Val(total) - Val(sender(12, Me.Cyber_BusinessDataGridView.CurrentCell.RowIndex).value.ToString)
+
+            End If
+            'If e.ColumnIndex = 12 Then
+            
+            'End If
+
+        End If

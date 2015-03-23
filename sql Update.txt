@@ -1,0 +1,3 @@
+UPDATE    SOLD_VIEW
+SET              PLACE = ?, [SOLD PRICE] = ?, DISCOUNT = ?, [SOLD DATE] = ?
+WHERE     ([DVD ID] = ?)

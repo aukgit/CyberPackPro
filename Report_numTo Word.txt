@@ -1,0 +1,17 @@
+dim b as string
+dim d as string
+dim a as number
+d=cstr({@GRND_TOTAL})
+a=instr(d,".")
+if a>0 then
+a=val(mid(d,a+1))
+if a>0 then
+b=ToWords (a,0) & " paisa"
+b=ucase(b)
+else
+b=""
+end if
+else
+b=""
+end if
+formula = ucase(ToWords ({@GRND_TOTAL},0)) & " TAKA " & b & " ONLY."

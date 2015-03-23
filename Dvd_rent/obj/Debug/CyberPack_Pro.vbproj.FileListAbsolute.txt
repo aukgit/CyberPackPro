@@ -1,0 +1,97 @@
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\bin\Debug\CyberPack Pro.exe.config
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\bin\Debug\CyberPack Pro.exe.manifest
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\bin\Debug\CyberPack Pro.application
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\bin\Debug\CyberPack Pro.exe
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\bin\Debug\CyberPack Pro.pdb
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\bin\Debug\Interop.ShockwaveFlashObjects.dll
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\bin\Debug\AxInterop.ShockwaveFlashObjects.dll
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\ResolveAssemblyReference.cache
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\Interop.ShockwaveFlashObjects.dll
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\AxInterop.ShockwaveFlashObjects.dll
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.vbproj.ResolveComReference.cache
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Cyber.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.CyberMem.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Cyber_PcID.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.DVDDeletedRows.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.DVDRENT_ADMIN.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Product_Input3.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.DVDIDSFrm.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.MOVIES_VIEWS.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.MSold.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.MVIEWS.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.ps_employees.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.LoginInformation.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.LoinSoft.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.DynamicNetCost.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.mRentDays.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.war_info.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.AboutBox1.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.NetConnection.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.TrailInsInfo.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Resource1.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.NewTrans.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.MCompany.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Summary_Query_Mob.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.AukQ.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.FeesPaid.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Ip_Settings.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Pakages.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Buyx.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.MSOLD_SET.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Option_Gen.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.PS_SOLD.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Vendor.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.VENDORS_SUMMARY.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Options_Sim.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.SimCate.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.SimCommon.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.SimSold.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.SimStock.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.StockI_mob.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.UserCreator.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.PS_VIEW.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.ViewQuery.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Form1.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Auk_Information.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.CostomerCheck.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Costomers.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.DVDViewForm.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.SplashSc.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Movie_Type.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.LOAD2.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.TRaLoad.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.AdCyber.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.PrSrc.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Reports.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.SelfEntry.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.SettingsAccess.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Limg.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Clients.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Resources.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Advance_SelectedEntry.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.BackUp.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.DL_Opt.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.DVDOPT.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.DVD_MEMBER.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.MSETTING.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.CHK_PASS.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.RENTAL_SET.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.FIND_BETWEEN.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.PCATE.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.PRO_ADD2.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.PS_CATE_F.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.PS_CLIENT.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.PS_SETTING.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.PS_WARRANTY.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Register.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Small_imgs.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.ViewInfo2.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.VsImg.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack_Pro.Warn.resources
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\ResGen.read.1.tlog
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\ResGen.write.1.tlog
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack Pro.TrustInfo.xml
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack Pro.exe.manifest
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack Pro.application
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack Pro.exe
+P:\Programming\Vcd Rent\CyberPack Pro Source\2010\Dvd_rent\obj\Debug\CyberPack Pro.pdb
